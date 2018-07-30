@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.dots {
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.firstDot,
+.secondDot,
+.thirdDot {
+  width: 50px;
+  height: 50px;
+  background: blue;
+  border-radius: 50%;
+}
+.firstDot {
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation-name: first;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+.secondDot {
+  animation-name: first;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.1s;
+}
+.thirdDot {
+  animation-name: first;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.2s;
+}
+@keyframes first {
+  0% {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: 25px;
+  }
+  100% {
+    margin-bottom: 0;
+  }
+}
